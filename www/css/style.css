@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+
+.textinput {
+    background-color: #F5F3F3;
+    height: 200px !important;
+    width: 200px !important;
+    font-size: 150px !important;
+}
+
+.array {
+    width: 10%;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
