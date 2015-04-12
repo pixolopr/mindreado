@@ -1,6 +1,13 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope) {
+
+    $scope.array1 = [1,2,3,4,5,6,7,8,9,10];
+    
+    
+    $scope.text = "abc";
+    
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();
