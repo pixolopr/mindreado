@@ -1,6 +1,6 @@
 <ion-view view-title="Chats">
  <ion-content class="padding">
-      <div ng-repeat="x in array" class="array" ng-click="magic()" ng-class="{strike: deleted, bold: important}">{{x}}</div>
+      <div ng-repeat="x in array" class="array" ng-click="magic($index)" ng-class="{redball: jyoti[$index], yellowball: !jyoti[$index]}">{{x}}</div>
     
        
        <!-- <ion-option-button class="button-assertive" ng-click="remove(chat)">
