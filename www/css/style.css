@@ -11,4 +11,16 @@
     width: 10%;
     display: -webkit-inline-box;
     text-align: -webkit-center;
+    background-size: 69%;
+    background-position-x: 7px;
+    background-position-y: -3px;
+    background-repeat: no-repeat;
+}
+.redball{
+    background-image: url("../img/redball.png");
+    color: white;
+}
+.yellowball{
+    background-image: url("../img/yellowball.png");
+    color: white;
 }
