@@ -36,7 +36,7 @@ angular.module('starter.controllers', [])
 
 
     $scope.magic = function (i) {
-        check++;
+        check++; //wrong way to do, this will become on every click, check length of $scope.arr instead
         if (check < 6) {
             $scope.jyoti[i] = true;
             $scope.arr.push($scope.array[i]);
