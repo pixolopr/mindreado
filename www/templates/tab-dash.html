@@ -4,10 +4,13 @@
             <div class="item item-divider">Recent Updates</div>
             <div class="item item-body">
                 <div>
-                    <input type="text" pattern="[0-9]{1}" ng-model="number" class="textinput">
-                </div>
+                    <input type="text"  ng-pattern="/^[0-9]+$/" ng-model="number" class="textinput" required>
 
-            </div>
+
+
+                </div>
+            
+        </div>
         </div>
 
     </ion-content>

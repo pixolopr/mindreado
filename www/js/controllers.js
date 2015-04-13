@@ -1,17 +1,18 @@
+//global variables
+var input = "";
+
 angular.module('starter.controllers', [])
 
-var input = "";
+
 
 .controller('DashCtrl', function ($scope) {
 
 
     $scope.number = "";
-    
-    $scope.change = function()
-    {
+    $scope.change = function () {
         input = $scope.number;
-    };
 
+    };
 
 
 
@@ -29,12 +30,36 @@ var input = "";
         $scope.jyoti[q] = false;
     };
     var check = 0;
+    $scope.arr = [];
+
+
+
+
     $scope.magic = function (i) {
         check++;
         if (check < 6) {
             $scope.jyoti[i] = true;
+            $scope.arr.push($scope.array[i]);
+
         };
+
+
     }
+    $scope.arr1=[];
+    for (var k = 0,c=0; k < $scope.array.length;k++) {
+        for (var j = 0; j < $scope.arr.length; j++) {
+            if ($scope.arr[j]== $scope.array[k]) {
+                c = o;
+                break;
+            }
+            else
+                c=1;
+        }
+    if(c==1)
+        $scope.arr1.push($scope.array[k]);
+    }
+
+
 })
 
 .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
