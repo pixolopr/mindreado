@@ -27,54 +27,47 @@ angular.module('starter.controllers', [])
     $scope.select = [];
     $scope.select1 = [];
     $scope.select2 = [];
+    
+    
+    $scope.arr = [];
+    $scope.arr1 = [];
+    $scope.arr2 = [];
+    
+    
+    
     $scope.jyoti = [];
     for (var q = 0; q < $scope.array.length; q++) {
         $scope.jyoti[q] = false;
     };
     var check = 0;
-    $scope.arr = [];
 
 
 
 
-    $scope.magic = function (i, arrey, limitlen, classname, destination) {
+    $scope.magic = function (i, arrey, limitlen, classname, destination, temparr) {
         console.log(arrey);
         var p = arrey[i];
-        // console.log(p);
-        if ($scope.arr.length < limitlen) {
-
-            if ($scope.arr.indexOf(p) == -1) {
+        console.log(temparr);
+        if (temparr.length < limitlen) {
+            if (temparr.indexOf(p) == -1) {
                 classname[i] = !classname[i];
-                $scope.arr.push(arrey[i]);
+                temparr.push(arrey[i]);
                 console.log($scope.arr.length);
                 console.log($scope.arr);
             };
-            if ($scope.arr.length == limitlen) {
-                /*if (limitlen == 5) {
-                    $scope.spliting($scope.array);
-                } else if (limitlen == 3) {
-                    console.log($scope.select);
-                    $scope.spliting($scope.select);
-                }*/
-                console.log(arrey);
-                console.log(destination);
-                
-                $scope.spliting(arrey, destination);
-                destination = [1,2];
-                arrey=[1,2];
+            if (temparr.length == limitlen) {
+                $scope.spliting(arrey,temparr, destination);
             };
         };
     };
 
 
     $scope.arr1 = [];
-    $scope.spliting = function (arrey, destine) {
-        console.log(destine);
-        destine = [1,2];
+    $scope.spliting = function (arrey,temparr, destine) {
         c = 0;
         for (var k = 0; k < arrey.length; k++) {
-            for (var j = 0; j < $scope.arr.length; j++) {
-                if (arrey[k] == $scope.arr[j]) {
+            for (var j = 0; j < temparr.length; j++) {
+                if (arrey[k] == temparr[j]) {
                     c = 0;
                     break;
                 } else {
@@ -87,7 +80,7 @@ angular.module('starter.controllers', [])
             };
         };
         console.log($scope.arr1);
-        $scope.selected(destine);
+        $scope.selected(temparr, destine);
     }
     $scope.colour = function (val, len, array) {
         for (var w = 0; w < len; w++) {
@@ -95,19 +88,29 @@ angular.module('starter.controllers', [])
         };
     };
 
-    $scope.selected = function (des) {
+    var insertintodestination = function(d, arrr)
+    {
+        for(var e=0; e<arrr.length;e++)
+        {
+            d.push(arrr[e]);
+        };
+    };
+    
+    $scope.selected = function (temparr, des) {
         var ind = $scope.arr.indexOf(input);
         $scope.jyoti2 = [];
         console.log(ind);
         if (ind == -1) {
             $scope.colour(false, $scope.arr1.length, $scope.jyoti2);
-            des = $scope.arr1;
+            insertintodestination(des,$scope.arr1);
+            //des = $scope.arr1;
 
         } else {
             $scope.colour(true, $scope.arr.length, $scope.jyoti2);
-            des = $scope.arr;
+            insertintodestination(des, temparr);
+            //des = $scope.arr;
         };
-        $scope.arr = [];
+        //$scope.arr = [];
         $scope.arr1 = [];
 
 

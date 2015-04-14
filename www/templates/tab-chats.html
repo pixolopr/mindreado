@@ -1,12 +1,12 @@
 <ion-view view-title="Chats">
  <ion-content class="padding">
-      <div ng-repeat="x in array" class="array" ng-click="magic($index, array,5, jyoti,select)" ng-class="{redball: jyoti[$index], yellowball: !jyoti[$index]}">{{x}}</div>
+      <div ng-repeat="x in array" class="array" ng-click="magic($index, array,5 , jyoti,select, arr)" ng-class="{redball: jyoti[$index], yellowball: !jyoti[$index]}">{{x}}</div>
      </br>
      </br>
-     <div ng-repeat="y in select" class="array" ng-click="magic($index, select, 3, jyoti2,select1)" ng-class="{redball: jyoti2[$index], yellowball: !jyoti2[$index]}">{{y}}</div>
+     <div ng-repeat="y in select" class="array" ng-click="magic($index, select, 3, jyoti2,select1, arr1)" ng-class="{redball: jyoti2[$index], yellowball: !jyoti2[$index]}">{{y}}</div>
 <br>
 <br>
-<div ng-repeat="y in select1" class="array" ng-click="magic($index, select1, 3, jyoti2,select2)" ng-class="{redball: jyoti2[$index], yellowball: !jyoti2[$index]}">{{y}}</div>
+<div ng-repeat="y in select1" class="array" ng-click="magic($index, select1, 3, jyoti2,select2, arr2)" ng-class="{redball: jyoti2[$index], yellowball: !jyoti2[$index]}">{{y}}</div>
     
        <!-- <ion-option-button class="button-assertive" ng-click="remove(chat)">
           Delete
