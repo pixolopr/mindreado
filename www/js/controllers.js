@@ -116,7 +116,16 @@ angular.module('starter.controllers', [])
 
 		//}
 	};
+	$scope.magic1 = function (i1, arrrr, classname, dest, tempar) {
+		if ($scope.select1.length == 3) {
+			$scope.magic(i1, arrrr, 2, classname.dest, tempar);
 
+		} else {
+			$scope.magic(i1, arrrr, 1, classname, dest, tempar);
+		}
+
+
+	};
 })
 
 .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
