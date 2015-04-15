@@ -95,7 +95,7 @@ angular.module('starter.controllers', [])
 	};
 
 	$scope.selected = function (temparr, des) {
-		var ind = $scope.arr.indexOf(input);
+		var ind = temparr.indexOf(input);
 		$scope.jyoti2 = [];
 		console.log(ind);
 		if (ind == -1) {
