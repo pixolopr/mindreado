@@ -27,12 +27,12 @@ angular.module('starter.controllers', [])
 	$scope.select = [];
 	$scope.select1 = [];
 	$scope.select2 = [];
-
+	$scope.select3 = [];
 
 	$scope.arr = [];
 	$scope.arr2 = [];
 	$scope.arr3 = [];
-
+	$scope.arr4 = [];
 
 
 	$scope.jyoti = [];
@@ -88,10 +88,13 @@ angular.module('starter.controllers', [])
 		};
 	};
 
-	var insertintodestination = function (d, arrr) {
+	var insertintodestination = function (d, arrr, i3) {
 		for (var e = 0; e < arrr.length; e++) {
 			d.push(arrr[e]);
 		};
+		//	if ($scope.select2.length == 2) {
+		//	$scope.magic(i3, d, 1, jyoti3, select2, $scope.arr4);
+		//}
 	};
 
 	$scope.selected = function (temparr, des) {
@@ -108,6 +111,7 @@ angular.module('starter.controllers', [])
 			insertintodestination(des, temparr);
 			//des = $scope.arr;
 		};
+
 		//$scope.arr = [];
 		$scope.arr1 = [];
 
@@ -117,10 +121,12 @@ angular.module('starter.controllers', [])
 		//}
 	};
 	$scope.magic1 = function (i1, arrrr, classname, dest, tempar) {
-		if ($scope.select1.length == 3) {
-			$scope.magic(i1, arrrr, 2, classname.dest, tempar);
+		console.log(arrrr.length);
+		if (arrrr.length == 3) {
 
-		} else {
+			$scope.magic(i1, arrrr, 2, classname, dest, tempar);
+
+		} else if (arrrr.length == 2) {
 			$scope.magic(i1, arrrr, 1, classname, dest, tempar);
 		}
 
