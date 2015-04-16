@@ -91,7 +91,9 @@ angular.module('starter.controllers', [])
 	var insertintodestination = function (d, arrr, i3) {
 		for (var e = 0; e < arrr.length; e++) {
 			d.push(arrr[e]);
+
 		};
+		d.sort();
 		//	if ($scope.select2.length == 2) {
 		//	$scope.magic(i3, d, 1, jyoti3, select2, $scope.arr4);
 		//}
