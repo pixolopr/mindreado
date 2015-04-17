@@ -9,9 +9,9 @@ angular.module('starter.controllers', [])
 
 
     $scope.number = {};
-    $scope.number.input ;
+    $scope.number.input;
     $scope.change = function () {
-        input =parseInt($scope.number.input);
+        input = parseInt($scope.number.input);
         console.log(input);
     };
 
@@ -37,6 +37,11 @@ angular.module('starter.controllers', [])
 
 
     $scope.jyoti = [];
+    $scope.jyoti2 = [];
+    $scope.jyoti3 = [];
+    $scope.jyoti4 = [];
+    $scope.jyoti5 = [];
+
     for (var q = 0; q < $scope.array.length; q++) {
         $scope.jyoti[q] = false;
     };
@@ -45,10 +50,11 @@ angular.module('starter.controllers', [])
 
 
 
-    $scope.magic = function (i, arrey, limitlen, classname, destination, temparr) {
-        console.log(arrey);
+    $scope.magic = function (i, arrey, limitlen, classname, destination, temparr, messi) {
+        console.log(messi);
         var p = arrey[i];
-        console.log(temparr);
+        //console.log(temparr);
+
         if (temparr.length < limitlen) {
             if (temparr.indexOf(p) == -1) {
                 classname[i] = !classname[i];
@@ -57,14 +63,15 @@ angular.module('starter.controllers', [])
                 console.log(temparr);
             };
             if (temparr.length == limitlen) {
-                $scope.spliting(arrey, temparr, destination);
+                console.log(messi);
+                $scope.spliting(arrey, temparr, destination, messi, classname);
             };
         };
     };
 
 
     $scope.arr1 = [];
-    $scope.spliting = function (arrey, temparr, destine) {
+    $scope.spliting = function (arrey, temparr, destine, messi, classname) {
         var c = 0;
         for (var k = 0; k < arrey.length; k++) {
             for (var j = 0; j < temparr.length; j++) {
@@ -80,8 +87,8 @@ angular.module('starter.controllers', [])
                 $scope.arr1.push(arrey[k]);
             };
         };
-        console.log($scope.arr1);
-        $scope.selected(temparr, destine);
+        console.log(messi);
+        $scope.selected(temparr, destine, messi, classname);
     }
     $scope.colour = function (val, len, array) {
         for (var w = 0; w < len; w++) {
@@ -102,18 +109,21 @@ angular.module('starter.controllers', [])
         //}
     };
 
-    $scope.selected = function (temparr, des) {
+    $scope.selected = function (temparr, des, messi, classname) {
         console.log(input);
         var ind = temparr.indexOf(input);
-        $scope.jyoti2 = [];
+        var j = classname[ind];
         console.log(ind);
         if (ind == -1) {
-            $scope.colour(false, $scope.arr1.length, $scope.jyoti2);
+            console.log(messi);
+
+            $scope.colour(j, $scope.arr1.length, messi);
             insertintodestination(des, $scope.arr1);
             //des = $scope.arr1;
 
         } else {
-            $scope.colour(true, $scope.arr.length, $scope.jyoti2);
+            console.log(messi);
+            $scope.colour(!j, temparr.length, messi);
             insertintodestination(des, temparr);
             //des = $scope.arr;
         };
@@ -126,14 +136,14 @@ angular.module('starter.controllers', [])
 
         //}
     };
-    $scope.magic1 = function (i1, arrrr, classname, dest, tempar) {
+    $scope.magic1 = function (i1, arrrr, classname, dest, tempar, messi) {
         console.log(arrrr.length);
         if (arrrr.length == 3) {
 
-            $scope.magic(i1, arrrr, 2, classname, dest, tempar);
+            $scope.magic(i1, arrrr, 2, classname, dest, tempar, messi);
 
         } else if (arrrr.length == 2) {
-            $scope.magic(i1, arrrr, 1, classname, dest, tempar);
+            $scope.magic(i1, arrrr, 1, classname, dest, tempar, messi);
         }
 
 
