@@ -1,26 +1,46 @@
 /* Empty. Add your own CSS if you like */
 
 .textinput {
-    background-color: #F5F3F3;
-    height: 200px !important;
-    width: 200px !important;
-    font-size: 150px !important;
+	background-color: #F5F3F3;
+	height: 200px !important;
+	width: 200px !important;
+	font-size: 150px !important;
 }
 
-.array  {
-    width: 10%;
-    display: -webkit-inline-box;
-    text-align: -webkit-center;
-    background-size: 69%;
-    background-position-x: 7px;
-    background-position-y: -3px;
-    background-repeat: no-repeat;
+.array {
+	width: 10%;
+	display: -webkit-inline-box;
+	text-align: -webkit-center;
+	background-size: 69%;
+	background-position-x: 7px;
+	background-position-y: -3px;
+	background-repeat: no-repeat;
 }
-.redball{
-    background-image: url("../img/redball.png");
-    color: white;
+
+.redball {
+	background-image: url("../img/redball.png");
+	color: white;
 }
-.yellowball{
-    background-image: url("../img/yellowball.png");
-    color: black;
+
+.yellowball {
+	background-image: url("../img/yellowball.png");
+	color: black;
+}
+
+.divs {
+	width: 50%;
+	display: -webkit-inline-box;
+	text-align: -webkit-center;
+	background-size: 69%;
+	background-position-x: 7px;
+	background-position-y: -3px;
+	background-repeat: no-repeat;
+}
+
+.red {
+	background-color: red;
+}
+
+.yellow {
+	background-color: yellow;
 }
