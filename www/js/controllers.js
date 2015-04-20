@@ -31,7 +31,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ChatsCtrl', function ($scope, Chats, $location, $ionicPlatform) {
+.controller('ChatsCtrl', function ($scope, Chats, $location, $ionicPlatform, $filter) {
 
 
 	$scope.resetgame = function () {
@@ -58,6 +58,7 @@ angular.module('starter.controllers', [])
 		$scope.steptwo = [];
 		$scope.slection;
 		$scope.chechselect = 0;
+		$scope.steptwoo = [];
 
 		for (var r = 0; r < 6; r++) {
 			$scope.buttonarray[r] = {
@@ -155,21 +156,14 @@ angular.module('starter.controllers', [])
 		d.sort(function (a, b) {
 			return a - b;
 		});
-		$scope.steptwo[$scope.chechselect] = true;
+		$scope.steptwoo[$scope.chechselect] = true;
 
-		if (d.length == 3) {
-			$scope.selection = 2;
-			//$scope.steptwo[$scope.chechselect] = true;
-		} else if (d.length == 2) {
-			$scope.selection = 1;
-			//$scope.steptwo[$scope.chechselect] = true;
-		} else if (d.length == 1) {
-			$scope.steptwo[$scope.chechselect] = false;
-		}
-		//	if ($scope.select2.length == 2) {
-		//	$scope.magic(i3,sss d, 1, jyoti3, select2, $scope.arr4);
-		//}
 	};
+	$scope.count = function (c) {
+		return Math.round(c.length / 2);
+
+	};
+
 
 	$scope.selected = function (i, temparr, des, messi, classname) {
 		console.log(input);
@@ -180,7 +174,7 @@ angular.module('starter.controllers', [])
 		// var b = arrey.indexOf(input);
 		var j = classname[i];
 		console.log("j is" + j);
-
+		$scope.steptwo[$scope.chechselect] = j;
 		if (ind == -1) {
 			console.log(messi);
 
