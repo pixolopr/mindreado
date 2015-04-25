@@ -1,54 +1,62 @@
 <ion-view view-title="Chats">
-	<ion-content class="padding">
-		<div ng-hide="inputset">There is no prediction yet</div>
-		<div ng-show="inputset">
-			<div ng-repeat="x in array" class="array" ng-click="magic($index, array, 5 , jyoti,select, arr,jyoti2)" ng-class="{redball: jyoti[$index], yellowball: !jyoti[$index]}">{{x}}</div>
-			<h4>Select any 5 cards</h4>
-		</div>
+    <ion-content class="padding bg">
+        <div ng-hide="inputset">There is no prediction yet</div>
+        <div ng-show="inputset">
+            <div ng-repeat="x in array" class="array" ng-click="magic($index, array, 5 , jyoti,select, arr,jyoti2)" ng-class="{redball: jyoti[$index], yellowball: !jyoti[$index]}">
+                <div class="content">{{x}}</div>
+            </div>
+            <h4>Select any 5 cards</h4>
+        </div>
 
-		<div ng-show="buttonarray[0].value" class="divs" ng-class="{red :steptwo[0] , yellow:!steptwo[0]}" ng-click="insertintodestination(select, final)">{{buttonarray[0].title}}</div>
-		</br>
-		</br>
-		<div>
-			<div ng-repeat="y in select" class="array" ng-click="magic($index, select, 3, jyoti2,select1, arr2,jyoti3)" ng-class="{redball: jyoti2[$index], yellowball: !jyoti2[$index]}">{{y}}</div>
-			<br>
-			<div ng-show="select.length>0">
-				<h4>Select any 3 cards</h4>
-			</div>
-			<br>
-			<div ng-show="buttonarray[1].value" class="divs" ng-click="insertintodestination(select1, final)" ng-class="{red: steptwo[1], yellow: !steptwo[1]}">{{buttonarray[1].title}}</div>
+        <div ng-show="buttonarray[0].value" class="divs" ng-class="{red :steptwo[0] , yellow:!steptwo[0]}" ng-click="insertintodestination(select, final)">{{buttonarray[0].title}}</div>
+        </br>
+        </br>
+        <div>
+            <div ng-repeat="y in select" class="array" ng-click="magic($index, select, 3, jyoti2,select1, arr2,jyoti3)" ng-class="{redball: jyoti2[$index], yellowball: !jyoti2[$index]}">
+                <div class="content">{{y}}</div>
+            </div>
+            <br>
+            <div ng-show="select.length>0">
+                <h4>Select any 3 cards</h4>
+            </div>
+            <br>
+            <div ng-show="buttonarray[1].value" class="divs" ng-click="insertintodestination(select1, final)" ng-class="{red: steptwo[1], yellow: !steptwo[1]}">{{buttonarray[1].title}}</div>
 
-			<br>
-			<br>
-			<div ng-repeat="y in select1" class="array" ng-click="magic1($index, select1,jyoti3,select2, arr3,jyoti4)" ng-class="{redball: jyoti3[$index], yellowball: !jyoti3[$index]}">{{y}}</div>
-			<br>
-			<div ng-show="select1.length>0">
-				<h4>Select any {{count(select1)}} cards</h4>
-			</div>
-			<br>
-			<div ng-show="buttonarray[2].value" class="divs" ng-class="{red: steptwo[2], yellow: !steptwo[2]}" ng-click="insertintodestination(select2, final)">{{buttonarray[2].title}}</div>
+            <br>
+            <br>
+            <div ng-repeat="y in select1" class="array" ng-click="magic1($index, select1,jyoti3,select2, arr3,jyoti4)" ng-class="{redball: jyoti3[$index], yellowball: !jyoti3[$index]}">
+                <div class="content">{{y}}</div>
+            </div>
+            <br>
+            <div ng-show="select1.length>0">
+                <h4>Select any {{count(select1)}} cards</h4>
+            </div>
+            <br>
+            <div ng-show="buttonarray[2].value" class="divs" ng-class="{red: steptwo[2], yellow: !steptwo[2]}" ng-click="insertintodestination(select2, final)">{{buttonarray[2].title}}</div>
 
-			<br>
-			<br>
-			<div ng-repeat="y in select2" class="array" ng-click="magic1($index, select2,jyoti4,select3, arr4,jyoti5)" ng-class="{redball: jyoti4[$index], yellowball: !jyoti4[$index]}">{{y}}</div>
-			<br>
-			<div ng-show="select2.length>1">
-				<h4>Select any  {{count(select2)}} cards</h4>
-			</div>
-			<br>
-			<div ng-show="buttonarray[3].value" class="divs" ng-class="{red: steptwo[3], yellow: !steptwo[3]}" ng-click="insertintodestination(select3, final)">{{buttonarray[3].title}}</div>
+            <br>
+            <br>
+            <div ng-repeat="y in select2" class="array" ng-click="magic1($index, select2,jyoti4,select3, arr4,jyoti5)" ng-class="{redball: jyoti4[$index], yellowball: !jyoti4[$index]}">
+                <div class="content">{{y}}</div>
+            </div>
+            <br>
+            <div ng-show="select2.length>1">
+                <h4>Select any  {{count(select2)}} cards</h4>
+            </div>
+            <br>
+            <div ng-show="buttonarray[3].value" class="divs" ng-class="{red: steptwo[3], yellow: !steptwo[3]}" ng-click="insertintodestination(select3, final)">{{buttonarray[3].title}}</div>
 
-			<br>
-			<br>
-			<div ng-repeat="y in select3" class="array" ng-class="{redball: jyoti5[$index], yellowball: !jyoti5[$index]}">{{y}}</div>
-			<br>
+            <br>
+            <br>
+            <div ng-repeat="y in select3" class="array" ng-class="{redball: jyoti5[$index], yellowball: !jyoti5[$index]}">
+                <div class="content">{{y}}</div>
+            </div>
+            <br>
 
-			<div ng-show="select3.length>1">
-				<h4>Select any {{count(select3)}} cards</h4>
-			</div>
+           
 
-			<!-- <ion-option-button class="button-assertive" ng-click="remove(chat)">
+            <!-- <ion-option-button class="button-assertive" ng-click="remove(chat)">
           Delete
         </ion-option-button>-->
-	</ion-content>
+    </ion-content>
 </ion-view>

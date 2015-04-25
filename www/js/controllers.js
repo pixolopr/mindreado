@@ -199,9 +199,9 @@ angular.module('starter.controllers', [])
 		$scope.buttonarray[$scope.chechselect].value = true;
 		console.log($scope.buttonarray);
 		if (j == true) {
-			$scope.buttonarray[$scope.chechselect].title = "GET RED CARDS";
+			$scope.buttonarray[$scope.chechselect].title = "GET PURPLE CARDS";
 		} else {
-			$scope.buttonarray[$scope.chechselect].title = "GET YELLOW CARDS";
+			$scope.buttonarray[$scope.chechselect].title = "GET WHITE CARDS";
 		};
 
 		$scope.chechselect = $scope.chechselect + 1;
