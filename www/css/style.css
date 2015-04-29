@@ -18,6 +18,20 @@
     position: absolute;
     -webkit-transform: translateY(-50%);
     color: #a0034d;
+    margin-left: -11%;
+}
+
+.tab-item-active {
+    background-color: #a0034d;
+    color: white;
+}
+
+.tab-hidden {
+    background-color: white;
+}
+
+.tab-item-active .tab-title {
+    color: white;
 }
 
 .textinput {
@@ -31,12 +45,12 @@
 }
 
 .array {
-    width: 15%;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: -webkit-inline-box;
     text-align: -webkit-center;
-    margin-left: 4%;
-    margin-top: 4%;
+    margin-left: 12px;
+    margin-top: 12px;
     transition: 1s linear;
     -ms-transition: 1s linear;
     -moz-transition: 1s linear;
@@ -78,19 +92,53 @@
 }
 
 .divs {
-    width: 50%;
+    width: 60%;
     display: -webkit-inline-box;
     text-align: -webkit-center;
     background-size: 69%;
     background-position-x: 7px;
     background-position-y: -3px;
     background-repeat: no-repeat;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.arrowimage {
+    height: 25px;
+    background-size: 100%;
+    width: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-bottom: -35px;*/
+    
+    margin-top: 5px;
+    background-repeat: no-repeat;
 }
 
 .red {
-    background-color:#a0034d ;
+    background-image: url('../img/purpledown.png');
 }
 
 .yellow {
-    background-color: white;
+    background-image: url('../img/whitedown.png');
 }
+
+.headings {
+    color: yellow;
+    font-family: kingthings;
+    font-size: 2em !important;
+    text-align: center;
+}
+
+.bar-stable {
+    background-color: #a0034d !important;
+}
+
+.bar-stable .title {
+    color: white !important;
+    font-family: kingthings;
+    font-size: 1.7em;
+}
+
+.centercards {}
