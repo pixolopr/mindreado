@@ -22,7 +22,7 @@
 }
 
 .tab-item-active {
-    background-color: #a0034d;
+    background-color: #a0034d !important;
     color: white;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .tab-item-active .tab-title {
-    color: white;
+    color: white !important;
 }
 
 .textinput {
