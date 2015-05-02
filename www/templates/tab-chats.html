@@ -27,7 +27,7 @@
         <div ng-show="buttonarray[1].value" class="divs" ng-click="insertintodestination(select1, final)">{{buttonarray[1].title}}</div>
         <div ng-show="buttonarray[1].value" ng-class="{red :steptwo[1] , yellow:!steptwo[1]}" ng-click="insertintodestination(select1, final)" class="arrowimage"></div>
         <br>
-        <br>s
+        <br>
 </div>
         <div class="centercards">
             <div ng-repeat="y in select1" class="array" ng-click="magic1($index, select1,jyoti3,select2, arr3,jyoti4)" ng-class="{redball: jyoti3[$index], yellowball: !jyoti3[$index]}">
@@ -64,7 +64,9 @@
             </div>
         </div>
         <br>
-
+<div class="headings" ng-show="select2.length==1" >This is the predicted card.</div>
+ <div class="headings" ng-show="select3.length==1">
+     This is the predicted card.</div>
         </div>
 
         <!-- <ion-option-button class="button-assertive" ng-click="remove(chat)">

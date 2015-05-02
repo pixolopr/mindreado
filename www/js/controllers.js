@@ -31,7 +31,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ChatsCtrl', function ($scope, Chats, $location, $ionicPlatform, $filter) {
+.controller('ChatsCtrl', function ($scope, Chats, $location, $ionicPlatform, $filter, $ionicScrollDelegate) {
 
 
     $scope.resetgame = function () {
@@ -158,7 +158,9 @@ angular.module('starter.controllers', [])
         d.sort(function (a, b) {
             return a - b;
         });
-        $scope.steptwoo[$scope.chechselect] = true;
+$ionicScrollDelegate.scrollBy(0,100,true);
+        window.scrollTo(0, 0);
+        console.log("yo");
 
     };
     $scope.count = function (c) {
@@ -216,6 +218,7 @@ angular.module('starter.controllers', [])
         //for(var a=0;a<$scope.arr.length;a++){
 
         //}
+
     };
     $scope.magic1 = function (i1, arrrr, classname, dest, tempar, messi) {
         console.log(arrrr.length);
