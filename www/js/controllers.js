@@ -11,16 +11,11 @@ angular.module('starter.controllers', [])
     $scope.number = {};
     $scope.number.input = "";
     $scope.change = function () {
-        if (parseInt($scope.number.input) <= 10) {
-            if ($scope.number.input) {
+      
                 input = parseInt($scope.number.input);
-            } else {
-                input = 0;
-            };
+          
             console.log(input);
-        } else {
-            $scope.number.input = "";
-        };
+       
     };
 
 

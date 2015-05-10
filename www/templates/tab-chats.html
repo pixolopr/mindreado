@@ -53,13 +53,15 @@
             <h4 class="headings">Select any  {{count(select2)}} cards</h4>
         </div>
 
-        <div ng-if="select3.length > 0" ng-show="buttonarray[3].value" class="divs" ng-click="insertintodestination(select3, final)">{{buttonarray[3].title}}</div>
-        <div ng-if="select3.length > 0" ng-show="buttonarray[3].value" ng-class="{red :steptwo[3] , yellow:!steptwo[3]}" ng-click="insertintodestination(select3, final)" class="arrowimage"></div>
+        <div ng-if="select3.length== 0" ng-show="buttonarray[3].value" class="divs" ng-click="insertintodestination(select3, final)">{{buttonarray[3].title}}</div>
+        <div ng-if="select3.length == 0" ng-show="buttonarray[3].value" ng-class="{red :steptwo[3] , yellow:!steptwo[3]}" ng-click="insertintodestination(select3, final)" class="arrowimage"></div>
 
         <br ng-if="select3.length > 0">
         <br ng-if="select3.length > 0">
-        <div ng-if="select3.length > 0" class="centercards">
-            <div  ng-repeat="y in select3" class="array" ng-class="{redball: jyoti5[$index], yellowball: !jyoti5[$index]}">
+        <div ng-if="select3.length >0" class="centercards">
+            
+
+            <div ng-repeat="y in select3" class="array" ng-class="{redball: jyoti5[$index], yellowball: !jyoti5[$index]}">
                 <div class="content">{{y}}</div>
 
             </div>
