@@ -145,3 +145,10 @@
 .centercards {
     text-align: center;
 }
+
+.headerimage {
+    width: 43px;
+    z-index: 20;
+    position: relative;
+    left: 59%;
+}

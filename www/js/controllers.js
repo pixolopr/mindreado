@@ -5,32 +5,37 @@ angular.module('starter.controllers', [])
 
 
 
-.controller('DashCtrl', function ($scope,$ionicModal) {
-/*$scope.$on('$ionicView.enter', function () {
-    console.log("2");
- $scope.change(input);
-});*/
-console.log("1");
+.controller('DashCtrl', function ($scope, $ionicModal, $interval) {
+    /*$scope.$on('$ionicView.enter', function () {
+        console.log("2");
+     $scope.change(input);
+    });*/
+
+    $ionicModal.fromTemplateUrl('templates/my-modal.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function (modal) {
+        console.log("HEY HEY");
+        $scope.modal = modal;
+        console.log($scope.modal);
+    });
+    $scope.openModal = function () {
+        $scope.modal.show();
+    };
+    $scope.closeModal = function () {
+        $scope.modal.hide();
+    };
+    
+    $interval($scope.openModal, 1000, 1);
+
     $scope.number = {};
     $scope.number.input = "";
     $scope.change = function () {
-      console.log("hello");
-                input = parseInt($scope.number.input);
-          
-            console.log(input);
-       
+        input = parseInt($scope.number.input);
     };
-
-
-
-
-
-
-
 })
 
 .controller('ChatsCtrl', function ($scope, Chats, $location, $ionicPlatform, $filter, $ionicScrollDelegate) {
-
 
     $scope.resetgame = function () {
         console.log("Resetting");
@@ -62,12 +67,10 @@ console.log("1");
             $scope.buttonarray[r] = {
                 "value": false,
                 "title": "Yellow"
-            }
+            };
             $scope.steptwo[r] = false;
         };
         console.log($scope.jyoti2);
-
-
 
         $scope.final = [];
 
@@ -156,7 +159,7 @@ console.log("1");
         d.sort(function (a, b) {
             return a - b;
         });
-$ionicScrollDelegate.scrollBy(0,300,true);
+        $ionicScrollDelegate.scrollBy(0, 300, true);
         window.scrollTo(0, 0);
         console.log("yo");
 
