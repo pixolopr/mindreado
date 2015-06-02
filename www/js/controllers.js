@@ -11,7 +11,7 @@ angular.module('starter.controllers', [])
     $scope.number = {};
     $scope.number.input = "";
     $scope.change = function () {
-      
+      console.log("hello");
                 input = parseInt($scope.number.input);
           
             console.log(input);
