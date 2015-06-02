@@ -5,9 +5,12 @@ angular.module('starter.controllers', [])
 
 
 
-.controller('DashCtrl', function ($scope) {
-
-
+.controller('DashCtrl', function ($scope,$ionicModal) {
+/*$scope.$on('$ionicView.enter', function () {
+    console.log("2");
+ $scope.change(input);
+});*/
+console.log("1");
     $scope.number = {};
     $scope.number.input = "";
     $scope.change = function () {
@@ -153,7 +156,7 @@ angular.module('starter.controllers', [])
         d.sort(function (a, b) {
             return a - b;
         });
-$ionicScrollDelegate.scrollBy(0,100,true);
+$ionicScrollDelegate.scrollBy(0,300,true);
         window.scrollTo(0, 0);
         console.log("yo");
 
