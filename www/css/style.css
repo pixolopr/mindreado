@@ -152,3 +152,9 @@
     position: relative;
     left: 59%;
 }
+.instrucions{
+ font-size: 1.5em !important;
+  font-family: serif;
+   /* color: white;*/
+
+}
