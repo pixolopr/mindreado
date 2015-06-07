@@ -198,3 +198,8 @@ h6 {
     margin-left: 3%;
     text-align: center;
 }
+
+.screenshot {
+    width: 100% !important;
+    align-content: center;
+}
