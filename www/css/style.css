@@ -17,7 +17,7 @@
     top: 50%;
     position: absolute;
     -webkit-transform: translateY(-50%);
-    color: #a0034d;
+    color: #a0034d !important;
     margin-left: -11%;
 }
 
@@ -152,9 +152,49 @@
     position: relative;
     left: 59%;
 }
-.instrucions{
- font-size: 1.5em !important;
-  font-family: serif;
-   /* color: white;*/
 
+.instrucions {
+    font-size: 1.4em !important;
+    font-family: kingthings;
+    margin-left: 3%;
+    /* color: white;*/
+}
+
+.title1 {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 0px !important;
+    font-size: 2em !important;
+}
+
+.magicimage {
+    width: 25%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.images {
+    width: 25%;
+    margin-top: 0px !important;
+    margin-left: 5% !important;
+    float: left;
+}
+
+h4 {
+    text-align: center;
+    font-family: kingthings;
+    font-size: 1.5em;
+}
+
+.background {
+    background-color: gainsboro;
+}
+
+h6 {
+    font-size: 1.4em !important;
+    font-family: kingthings;
+    margin-left: 3%;
+    text-align: center;
 }
