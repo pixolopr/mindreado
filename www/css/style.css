@@ -178,8 +178,10 @@
 
 .magicimage {
     width: 25%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  /* margin-left: 35%;
+  transform: translateX(-26%);*/
+   /* margin-left: 50%;
+    transform: translateX(-50%);*/
 }
 
 .images {
