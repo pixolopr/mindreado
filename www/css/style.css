@@ -95,7 +95,7 @@
 .divs {
     width: 60%;
     display: -webkit-inline-box;
-    text-align: -webkit-center;
+    text-align: -webkit-center !important;
     background-size: 69%;
     background-position-x: 7px;
     background-position-y: -3px;
@@ -140,6 +140,8 @@
     color: white !important;
     font-family: kingthings;
     font-size: 1.7em;
+  margin-left: 50% !important;
+    transform: translateX(-50%) !important;
 }
 
 .centercards {
@@ -166,7 +168,12 @@
     background-color: black;
     color: white;
     margin: 0 0px !important;
-    font-size: 2em !important;
+    font-size: 1.5em !important;
+   border-style: solid;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+   /* background: transparent;*/
+    
 }
 
 .magicimage {
@@ -189,7 +196,7 @@ h4 {
 }
 
 .background {
-    background-color: gainsboro;
+    background-color:azure;
 }
 
 h6 {
@@ -199,7 +206,3 @@ h6 {
     text-align: center;
 }
 
-.screenshot {
-    width: 100% !important;
-    align-content: center;
-}
