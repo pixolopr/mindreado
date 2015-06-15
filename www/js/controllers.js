@@ -88,6 +88,9 @@ angular.module('starter.controllers', [])
 
     //FUNCTION WILL CALL EVERY TIME PLAY PAGE IS OPENED
     $scope.$on('$ionicView.enter', function () {
+        
+        $ionicScrollDelegate.scrollBy(0, 0, true);
+        
         $scope.resetgame();
         console.log(input);
         if (input > 0) {
