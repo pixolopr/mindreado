@@ -1,0 +1,30 @@
+<ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title1" >How to play</h1>
+    </ion-header-bar>
+    <ion-content class="padding background">
+        <img src="img/close.png" ng-click="closeModal()" style="width:5%;float:right;">
+    
+        <ion-slide-box >
+  <ion-slide>
+      <div><u>Step-1</u></div>
+    <div class="firststep">
+        
+     <center>   <img src="img/magic-hat.jpg" class="magicimage" style="width:65%" ></center>
+        <h4 >TRICK YOUR FRIENDS</h4><br>
+        
+       <div> <img src="img/predict.png" class="images"></div> <p class="instrucions" style="margin-top: 15%; margin-left: 32%;">On this page you put in a number between 1-10 and then click on play.</p>
+         <!--<a href="#secondstep" >     <button>Step-2</button></a>--><!--<img src="img/swipeleft.jpg" style="width:5%">-->
+        </div>
+  </ion-slide>
+  <ion-slide>
+      <div><u>Step-2</u></div>
+      <div id="secondstep">
+      <center>    <img src="img/play.png" class="magicimage" ></center> <p class="instrucions" >Now hand over the phone to your friend and then play as instructed.The final card will be what you inserted in step-1.</p><h6>They don't believe you?</h6><center><img src="img/predicted.png" class="magicimage" ></center><h4>Show them the number you punched in.</h4>
+          
+        <center>  <button ng-click="closeModal()" class="button button-dark bottombutton">I GOT IT !</button></center></div>  
+  </ion-slide>
+  
+</ion-slide-box>
+    </ion-content>
+  </ion-modal-view>

@@ -33,6 +33,18 @@ angular.module('starter.controllers', [])
     $scope.change = function () {
         input = parseInt($scope.number.input);
     };
+    
+    $scope.slideone = true;
+    $scope.onSwipeLeft = function()
+    {
+        $scope.slideone = false;
+    };
+    $scope.onSwipeRight = function()
+    {
+        $scope.slideone = true;
+    };
+    
+    
 })
 
 .controller('ChatsCtrl', function ($scope, Chats, $location, $ionicPlatform, $filter, $ionicScrollDelegate) {

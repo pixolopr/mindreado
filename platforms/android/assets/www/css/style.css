@@ -1,0 +1,210 @@
+@font-face {
+    font-family: kingthings;
+    src: url(Kingthings_Calligraphica.ttf);
+}
+
+.bg {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tabs .tab-title {
+    font-family: kingthings;
+    font-size: 3em;
+    /* margin-top: 50%; */
+    
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    color: #a0034d !important;
+    margin-left: -11%;
+}
+
+.tab-item-active {
+    background-color: #a0034d !important;
+    color: white;
+}
+
+.tab-hidden {
+    background-color: white;
+}
+
+.tab-item-active .tab-title {
+    color: white !important;
+}
+
+.textinput {
+    background-color: #F5F3F3;
+    height: 200px !important;
+    width: 60% !important;
+    font-size: 150px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    text-align: center;
+}
+
+.array {
+    width: 45px;
+    height: 45px;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+    margin-left: 12px;
+    margin-top: 12px;
+    transition: 1s linear;
+    -ms-transition: 1s linear;
+    -moz-transition: 1s linear;
+    -webkit-transition: 1s linear;
+}
+
+.redball {
+    box-shadow: 2px -3px 6px #B2AFAF;
+    background-color: #a0034d;
+    padding: 2px;
+    color: white;
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.yellowball {
+    box-shadow: 2px 3px 6px #B2AFAF;
+    background-color: white;
+    padding: 2px;
+    color: black;
+    -ms-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.yellowball .content {
+    top: 27%;
+}
+
+.redball .content {
+    top: -27%;
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.divs {
+    width: 60%;
+    display: -webkit-inline-box;
+    text-align: -webkit-center !important;
+    background-size: 69%;
+    background-position-x: 7px;
+    background-position-y: -3px;
+    background-repeat: no-repeat;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.arrowimage {
+    height: 25px;
+    background-size: 100%;
+    width: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-bottom: -35px;*/
+    
+    margin-top: 5px;
+    background-repeat: no-repeat;
+}
+
+.red {
+    background-image: url('../img/purpledown.png');
+}
+
+.yellow {
+    background-image: url('../img/whitedown.png');
+}
+
+.headings {
+    color: yellow;
+    font-family: kingthings;
+    font-size: 2em !important;
+    text-align: center;
+}
+
+.bar-stable {
+    background-color: #a0034d !important;
+}
+
+.bar-stable .title {
+    color: white !important;
+    font-family: kingthings;
+    font-size: 1.7em;
+  margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+.centercards {
+    text-align: center;
+}
+
+.headerimage {
+    width: 43px;
+    z-index: 20;
+    position: relative;
+    left: 59%;
+}
+
+.instrucions {
+    font-size: 1.4em !important;
+    font-family: kingthings;
+    margin-left: 3%;
+    /* color: white;*/
+}
+
+.title1 {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 0px !important;
+    font-size: 1.5em !important;
+   border-style: solid;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+   /* background: transparent;*/
+    
+}
+
+.magicimage {
+    width: 25%;
+  /* margin-left: 35%;
+  transform: translateX(-26%);*/
+   /* margin-left: 50%;
+    transform: translateX(-50%);*/
+}
+
+.images {
+    width: 25%;
+    margin-top: 0px !important;
+    margin-left: 5% !important;
+    float: left;
+}
+
+h4 {
+    text-align: center;
+    font-family: kingthings;
+    font-size: 1.5em;
+}
+
+.background {
+    background-color:azure;
+}
+
+h6 {
+    font-size: 1.4em !important;
+    font-family: kingthings;
+    margin-left: 3%;
+    text-align: center;
+}
+
