@@ -7,7 +7,7 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function ($scope, $ionicModal, $interval) {
     /*$scope.$on('$ionicView.enter', function () {
-        console.log("2");
+       
      $scope.change(input);
     });*/
 
@@ -15,9 +15,8 @@ angular.module('starter.controllers', [])
         scope: $scope,
         animation: 'slide-in-up'
     }).then(function (modal) {
-        console.log("HEY HEY");
         $scope.modal = modal;
-        console.log($scope.modal);
+
     });
     $scope.openModal = function () {
         $scope.modal.show();
@@ -25,7 +24,7 @@ angular.module('starter.controllers', [])
     $scope.closeModal = function () {
         $scope.modal.hide();
     };
-    
+
     $interval($scope.openModal, 1000, 1);
 
     $scope.number = {};
@@ -33,12 +32,21 @@ angular.module('starter.controllers', [])
     $scope.change = function () {
         input = parseInt($scope.number.input);
     };
+
+    $scope.slideone = true;
+    $scope.onSwipeLeft = function () {
+        $scope.slideone = false;
+    };
+    $scope.onSwipeRight = function () {
+        $scope.slideone = true;
+    };
+
+
 })
 
 .controller('ChatsCtrl', function ($scope, Chats, $location, $ionicPlatform, $filter, $ionicScrollDelegate) {
 
     $scope.resetgame = function () {
-        console.log("Resetting");
         $scope.array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         $scope.select = [];
         $scope.select1 = [];
@@ -70,7 +78,7 @@ angular.module('starter.controllers', [])
             };
             $scope.steptwo[r] = false;
         };
-        console.log($scope.jyoti2);
+
 
         $scope.final = [];
 
@@ -94,28 +102,18 @@ angular.module('starter.controllers', [])
 
 
     $scope.resetgame();
-
-
-    // var check = 0;
-
-
-
-
     $scope.magic = function (i, arrey, limitlen, classname, destination, temparr, messi) {
         var p = arrey[i];
-        //console.log(temparr);
+
 
         if (temparr.length < limitlen) {
             if (temparr.indexOf(p) == -1) {
-                console.log(classname[i]);
+
                 classname[i] = !classname[i];
                 temparr.push(arrey[i]);
-                console.log(temparr.length);
-                console.log(temparr);
             };
 
             if (temparr.length == limitlen) {
-                console.log(messi);
                 var b = arrey.indexOf(input);
                 $scope.spliting(b, arrey, temparr, destination, messi, classname);
             };
@@ -140,7 +138,7 @@ angular.module('starter.controllers', [])
                 $scope.arr1.push(arrey[k]);
             };
         };
-        console.log(messi);
+
         $scope.selected(i, temparr, destine, messi, classname);
     }
     $scope.colour = function (val, len, array) {
@@ -161,7 +159,7 @@ angular.module('starter.controllers', [])
         });
         $ionicScrollDelegate.scrollBy(0, 300, true);
         window.scrollTo(0, 0);
-        console.log("yo");
+
 
     };
     $scope.count = function (c) {
@@ -171,18 +169,11 @@ angular.module('starter.controllers', [])
 
 
     $scope.selected = function (i, temparr, des, messi, classname) {
-        console.log(input);
-        console.log(temparr);
-        console.log(classname);
         var ind = temparr.indexOf(input);
-        console.log(ind);
         // var b = arrey.indexOf(input);
         var j = classname[i];
-        console.log("j is" + j);
         $scope.steptwo[$scope.chechselect] = j;
         if (ind == -1) {
-            console.log(messi);
-
             $scope.colour(j, $scope.arr1.length, messi);
 
             //insertintodestination(des, $scope.arr1);
@@ -191,7 +182,6 @@ angular.module('starter.controllers', [])
             //des = $scope.arr1;
 
         } else {
-            console.log(messi);
             $scope.colour(j, temparr.length, messi);
             //insertintodestination(des, temparr);
 
@@ -202,7 +192,6 @@ angular.module('starter.controllers', [])
 
 
         $scope.buttonarray[$scope.chechselect].value = true;
-        console.log($scope.buttonarray);
         if (j == true) {
             $scope.buttonarray[$scope.chechselect].title = "GET PURPLE CARDS";
         } else {
@@ -222,7 +211,6 @@ angular.module('starter.controllers', [])
 
     };
     $scope.magic1 = function (i1, arrrr, classname, dest, tempar, messi) {
-        console.log(arrrr.length);
         if (arrrr.length == 3) {
 
             $scope.magic(i1, arrrr, 2, classname, dest, tempar, messi);

@@ -58,11 +58,14 @@ C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\close.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\headerlogo.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\logo.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\magic-hat.jpg \
+C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\magicimage.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\play.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\predict.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\predicted.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\purpledown.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\redball.png \
+C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\slidebuttons.png \
+C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\slidebuttons2.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\swipeleft.jpg \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\swiperight.png \
 C:\xampp\htdocs\mindreado\platforms\android\assets\www\img\whitedown.png \
