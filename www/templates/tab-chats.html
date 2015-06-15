@@ -1,7 +1,7 @@
 <ion-view view-title="Player">
-     <ion-nav-bar class="nav-bar-container bar-stable" >
-         <img src="img/headerlogo.png" class="headerimage">
-    </ion-nav-bar>
+    <ion-header-bar align-title="center" class="bar-stable">
+        <div class="title"><h1>JYOTI</h1><img src="img/headerlogo.png" class="headerimage"></div>
+    </ion-header-bar>
 
     <ion-content class="padding bg" style="overflow: scroll;">
         <div ng-hide="inputset" class="headings">There is no prediction yet</div>
@@ -63,7 +63,7 @@
         <br ng-if="select3.length > 0">
         <br ng-if="select3.length > 0">
         <div ng-if="select3.length >0" class="centercards">
-            
+
 
             <div ng-repeat="y in select3" class="array" ng-class="{redball: jyoti5[$index], yellowball: !jyoti5[$index]}">
                 <div class="content">{{y}}</div>
