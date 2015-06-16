@@ -149,17 +149,18 @@
 }
 
 .headerimage {
-    width: 43px;
+    width: 40px;
     z-index: 20;
     position: relative;
-   left: 59%;
+    top: 10px;
+  /* left: 59%;*/
 }
 
 .instrucions {
     font-size: 1.4em !important;
     font-family: kingthings;
     margin-left: 3%;
-    margin-top: 6vh;
+    margin-top: 6%;
 }
 
 .title1 {
