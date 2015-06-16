@@ -30,7 +30,10 @@ angular.module('starter.controllers', [])
     $scope.number = {};
     $scope.number.input = "";
     $scope.change = function () {
-        input = parseInt($scope.number.input);
+        if( $scope.number.input<10){
+        input = parseInt($scope.number.input);}else{
+         $scope.number.input = "";
+        }
     };
 
     $scope.slideone = true;
