@@ -140,8 +140,8 @@
     color: white !important;
     font-family: kingthings;
     font-size: 1.7em;
-    margin-left: 50% !important ;
-    transform: translateX(-50%) !important;
+  /*  margin-left: 50% !important ;
+    transform: translateX(-50%) !important;*/
 }
 
 .centercards {
@@ -152,7 +152,7 @@
     width: 43px;
     z-index: 20;
     position: relative;
-    left: 59%;
+   left: 59%;
 }
 
 .instrucions {
