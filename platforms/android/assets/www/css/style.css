@@ -93,15 +93,13 @@
 }
 
 .divs {
-    width: 60%;
-    display: -webkit-inline-box;
-    text-align: -webkit-center !important;
+    width: auto;
+    /*display: -webkit-inline-box;*/
+    text-align: center !important;
     background-size: 69%;
     background-position-x: 7px;
     background-position-y: -3px;
     background-repeat: no-repeat;
-    margin-left: 50%;
-    transform: translateX(-50%);
     color: white;
 }
 
@@ -140,8 +138,8 @@
     color: white !important;
     font-family: kingthings;
     font-size: 1.7em;
-    margin-left: 50% !important ;
-    transform: translateX(-50%) !important;
+  /*  margin-left: 50% !important ;
+    transform: translateX(-50%) !important;*/
 }
 
 .centercards {
@@ -149,17 +147,17 @@
 }
 
 .headerimage {
-    width: 43px;
+    width: 40px;
     z-index: 20;
     position: relative;
-    left: 59%;
+    top: 10px;
+  /* left: 59%;*/
 }
 
 .instrucions {
-    font-size: 1.4em !important;
+    font-size: 1.2em !important;
     font-family: kingthings;
     margin-left: 3%;
-    margin-top: 6vh;
 }
 
 .title1 {
@@ -176,7 +174,7 @@
 }
 
 .magicimage {
-    width: 25%;
+    width: 22%;
     /* margin-left: 35%;
   transform: translateX(-26%);*/
     /* margin-left: 50%;
@@ -193,7 +191,7 @@
 h4 {
     text-align: center;
     font-family: kingthings;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .background {
@@ -201,14 +199,14 @@ h4 {
 }
 
 h6 {
-    font-size: 1.4em !important;
+    font-size: 1.2em !important;
     font-family: kingthings;
     margin-left: 3%;
     text-align: center;
 }
 
 .steptext {
-    font-size: 2em;
+    font-size: 1.6em;
     text-align: center;
 }
 

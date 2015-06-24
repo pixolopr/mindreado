@@ -30,7 +30,10 @@ angular.module('starter.controllers', [])
     $scope.number = {};
     $scope.number.input = "";
     $scope.change = function () {
-        input = parseInt($scope.number.input);
+        if( $scope.number.input<=10){
+        input = parseInt($scope.number.input);}else{
+         $scope.number.input = "";
+        }
     };
 
     $scope.slideone = true;
@@ -88,6 +91,9 @@ angular.module('starter.controllers', [])
 
     //FUNCTION WILL CALL EVERY TIME PLAY PAGE IS OPENED
     $scope.$on('$ionicView.enter', function () {
+        
+        $ionicScrollDelegate.scrollBy(0, 0, true);
+        
         $scope.resetgame();
         console.log(input);
         if (input > 0) {
